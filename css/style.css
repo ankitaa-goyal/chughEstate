@@ -1,0 +1,23 @@
+nav.navbar {
+    padding: 20px 0;
+}
+
+nav.navbar form {
+    position: relative;
+}
+
+nav.navbar form button.btn {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    border: none;
+    outline: none;
+}
+
+nav.navbar form .form-control {
+    border-radius: 25px;
+}
+
+nav.navbar .nav-link {
+    padding: 8px 10px;
+}
