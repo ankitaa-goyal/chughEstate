@@ -74,10 +74,11 @@ nav.navbar .nav_align {
     text-align: center;
 }
 
-.features-1 .box-feature {
+.box-feature {
     background: #fff;
     border-radius: 4px;
     padding: 30px;
+    border: 1px solid #eee;
     margin-bottom: 30px;
     -webkit-box-shadow: 0 15px 30px 0 rgb(0 0 0 / 10%);
     box-shadow: 0 15px 30px 0 rgb(0 0 0 / 10%);
@@ -92,6 +93,7 @@ nav.navbar .nav_align {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    font-weight: 500;
 }
 
 section.properties-section {
@@ -350,4 +352,16 @@ footer .social-icons-footer ul li a {
 
 footer .footer-logo-img {
     color: #fff;
+}
+
+.services-banner .banner-img img {
+    width: 100%;
+}
+
+.services-section {
+    padding: 50px 0;
+}
+
+.box-feature p {
+    color: rgba(0, 0, 0, 0.5) !important;
 }
