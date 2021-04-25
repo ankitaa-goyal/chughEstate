@@ -30,7 +30,7 @@ section.index-banner {
 
 .menu-bg-wrap {
     background-color: #fff;
-    padding: 20px 30px;
+    padding: 5px 30px;
     position: relative;
     float: left;
     width: 100%;
@@ -54,8 +54,17 @@ nav.navbar form .form-control {
     border-radius: 25px;
 }
 
+nav.navbar ul.navbar-nav {
+    padding: 34px 0;
+}
+
+nav.navbar li.nav-item {
+    margin-left: 20px;
+}
+
 nav.navbar .nav-link {
     padding: 0px 10px;
+    font-size: 18px;
 }
 
 .header-search-form .btn {
@@ -67,6 +76,11 @@ nav.navbar .nav_align {
     float: right;
 }
 
+nav.navbar .navbar-brand {
+    display: inline-block;
+    padding: 0;
+}
+
 .features-1 {
     margin-top: -50px;
     position: relative;
@@ -74,10 +88,11 @@ nav.navbar .nav_align {
     text-align: center;
 }
 
-.features-1 .box-feature {
+.box-feature {
     background: #fff;
     border-radius: 4px;
     padding: 30px;
+    border: 1px solid #eee;
     margin-bottom: 30px;
     -webkit-box-shadow: 0 15px 30px 0 rgb(0 0 0 / 10%);
     box-shadow: 0 15px 30px 0 rgb(0 0 0 / 10%);
@@ -92,6 +107,7 @@ nav.navbar .nav_align {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    font-weight: 500;
 }
 
 section.properties-section {
@@ -106,7 +122,7 @@ section.properties-section {
 .properties-section .section-title h2 {
     font-weight: 700;
     font-size: 36px;
-    color: #515875;
+    color: #2a2a62;
 }
 
 .properties-section .site-image {
@@ -350,4 +366,89 @@ footer .social-icons-footer ul li a {
 
 footer .footer-logo-img {
     color: #fff;
+}
+
+.services-banner .banner-img {
+    position: relative;
+}
+
+.services-banner .banner-img img {
+    width: 100%;
+}
+
+.services-banner .banner-img .main-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.services-banner .banner-img .main-heading h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    word-spacing: 5px;
+    font-size: 50px;
+    text-shadow: 0 0 10px #be997e;
+}
+
+.services-section {
+    padding: 50px 0;
+}
+
+.box-feature p {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.properties li.nav-item {
+    background-color: transparent;
+    margin: 0 10px;
+    border-radius: 0px;
+    border: 2px solid #b0805c;
+}
+
+.properties ul.tab-wrapper {
+    justify-content: center;
+}
+
+.properties ul.tab-wrapper li a {
+    color: #b0805c;
+}
+
+.properties li.nav-item:hover,
+.properties li.nav-item:focus {
+    background-color: #b0805c;
+    border: 2px solid #b0805c;
+    border-radius: 0;
+}
+
+.properties li.nav-item:hover .nav-link,
+.properties li.nav-item:focus .nav-link {
+    color: #fff;
+}
+
+.properties .nav-tabs {
+    border-bottom: 0;
+}
+
+.properties .nav-tabs .nav-item.show .nav-link,
+.properties .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #b0805c;
+    border: 2px solid #b0805c !important;
+    border-radius: 0;
+}
+
+.properties .nav-tabs .nav-link:focus,
+.properties .nav-tabs .nav-link:hover {
+    border-color: #b0805c;
+}
+
+.navbar-brand img {
+    width: 45%;
+}
+
+.yellow-text {
+    color: #e1a118;
 }
