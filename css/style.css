@@ -1,3 +1,8 @@
+::selection {
+    background-color: rgb(47 48 102);
+    color: #fff;
+}
+
 h1,
 .h1,
 h2,
@@ -108,6 +113,7 @@ nav.navbar .navbar-brand {
     margin: 0;
     padding: 0;
     font-weight: 500;
+    color: #33356a;
 }
 
 section.properties-section {
@@ -292,6 +298,10 @@ footer .footer-logo-img {
     margin-left: -7px;
 }
 
+footer .footer-section-heading {
+    margin-bottom: 25px;
+}
+
 footer .footer-company-content p {
     font-size: 16px;
     line-height: 24px;
@@ -451,4 +461,289 @@ footer .footer-logo-img {
 
 .yellow-text {
     color: #e1a118;
+}
+
+.text-cmp {
+    color: #37386c;
+}
+
+.about,
+.agents,
+.collaborate-contact {
+    padding: 60px 0;
+}
+
+.about .heading h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about .img-about.dots {
+    position: relative;
+}
+
+.about .img-about {
+    background-size: cover;
+    background-position: center center;
+}
+
+.about .img-about img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.about .img-about img {
+    position: relative;
+    z-index: 2;
+}
+
+.about .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.about .img-about.dots:after {
+    position: absolute;
+    z-index: 1;
+    bottom: -60px;
+    right: -70px;
+    content: "";
+    width: 412px;
+    height: 220px;
+    background: url(../images/dots.png) no-repeat;
+}
+
+.about .company-features {
+    margin-bottom: 30px;
+}
+
+.about .company-features .wrap-icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80px;
+    flex: 0 0 80px;
+    height: 80px;
+    background: #efefef;
+    color: #000;
+    position: relative;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.about .company-features .wrap-icon .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about .company-features .feature-text {
+    margin-top: 10px;
+}
+
+.about .company-features .feature-text h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.about .company-features .feature-text p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.about .company-features:hover .wrap-icon,
+.about .company-features:focus .wrap-icon {
+    border: 2px solid #e5b140;
+    background-color: transparent;
+    transform: scale(1.07);
+}
+
+.about .company-features:hover .icon,
+.about .company-features:focus .icon {
+    color: #e5b140;
+}
+
+.agents .team-member {
+    /* background: #f0f0f0; */
+}
+
+.agents .team-member .member-image img {
+    width: 100%;
+}
+
+.agents .team-member .member-details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.agents .team-member .member-details ul {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+
+.agents .team-member .member-details ul li {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.agents .team-member .member-details ul li a {
+    display: block;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+}
+
+.agents .team-member .member-details .designation {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.agents .team-member .member-details h3 {
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.about-experience {
+    padding-top: 60px;
+}
+
+.support_section {
+    padding: 68px 0;
+}
+
+.support_section .section-heading {
+    margin-bottom: 20px;
+}
+
+.support_section .section-heading h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.section-heading h3 {
+    /* font-family: Poppins, sans-serif; */
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: .1px;
+    color: #000;
+    opacity: .8;
+    margin: 0;
+    text-align: center;
+}
+
+.section-heading h3 span {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0px;
+    color: #ffae00;
+    opacity: .8;
+}
+
+.support_section .section-heading ul {
+    padding: 0;
+}
+
+.support_section .section-heading ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.support_section .section-heading ul li a {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #737373;
+}
+
+.support_section .section-heading ul li a .fa {
+    color: #ffae00;
+    font-size: 24px;
+    margin-right: 15px;
+    width: 24px;
+}
+
+.support_section .section-heading ul li a b {
+    color: #000;
+    font-weight: 700;
+    margin-right: 00px;
+    display: inline-block;
+    width: 90px;
+}
+
+.support_section .form-box {
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 0 10px #0000004a;
+}
+
+.support_section .form-box .section-heading h4 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: .2px;
+    color: #737373;
+    margin-bottom: 29px;
+}
+
+.support_section .form-box form .form-control,
+.support_section .form-box form .form-control:focus,
+.support_section .form-box form select.js-example-disabled-results,
+.support_section .form-box form select.js-example-disabled-results:focus {
+    display: block;
+    border-bottom: 1px solid #737373!important;
+    padding: 8px 12px;
+    width: 100%;
+    color: #737373;
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 27px;
+    border: none;
+    outline: 0;
+    border-radius: 0;
+    max-height: 65px;
+    font-weight: 400;
+    letter-spacing: .2px;
+}
+
+.support_section .form-box .btn-red {
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btn-yellow {
+    background: #fcaf02;
+    border-radius: 100px;
+    padding: 15px 29px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: .1px;
+    color: #fff;
+    vertical-align: bottom;
 }
