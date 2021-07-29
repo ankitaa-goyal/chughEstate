@@ -34,8 +34,8 @@ section.index-banner {
 }
 
 .menu-bg-wrap {
-    background-color: #fff;
-    padding: 5px 30px;
+    background-color: #fff !important;
+    padding-top: 5px;
     position: relative;
     float: left;
     width: 100%;
@@ -84,6 +84,7 @@ nav.navbar .nav_align {
 nav.navbar .navbar-brand {
     display: inline-block;
     padding: 0;
+    padding-left: 30px;
 }
 
 .features-1 {
@@ -135,8 +136,14 @@ section.properties-section {
     position: relative;
 }
 
+.properties-section .site-image a {
+    height: 315px;
+}
+
 .properties-section .site-image a img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .properties-section .site-image:after {
@@ -257,6 +264,7 @@ section.testimonials {
     width: 80px !important;
     border-radius: 100%;
     margin-bottom: 40px;
+    object-fit: cover;
 }
 
 .testimonials .testimonial-content {
@@ -286,7 +294,8 @@ section.testimonials {
 
 footer {
     padding: 55px 0 0;
-    background-color: #222b35;
+    /* background-color: #222b35; */
+    background-color: #bdbdbd;
 }
 
 footer .upper-footer {
@@ -306,11 +315,13 @@ footer .footer-company-content p {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 0;
-    color: #fff;
+    /* color: #fff; */
+    color: #565680;
 }
 
 footer .footer-section-heading h5 {
-    color: #fff;
+    /* color: #fff; */
+    color: #22235d;
     font-size: 25px;
     font-weight: 500;
 }
@@ -323,7 +334,8 @@ footer .footer-section-heading h5 {
 }
 
 .footer-section-content ul li a {
-    color: #fff;
+    /* color: #fff; */
+    color: #565680;
     margin-bottom: 8px;
 }
 
@@ -335,11 +347,13 @@ footer .footer-contact-info {
 footer .footer-contact span {
     float: left;
     margin-right: 20px;
+    /* padding-bottom: 10px; */
 }
 
 footer .footer-contact p,
 footer .footer-contact p a {
-    color: #fff;
+    /* color: #fff; */
+    color: #565680;
     margin: 0;
     font-weight: 400;
 }
@@ -349,7 +363,8 @@ footer .bottom-footer {
 }
 
 footer .copyright p {
-    color: #fff;
+    /* color: #fff; */
+    color: #565680;
     margin: 0;
 }
 
@@ -369,13 +384,15 @@ footer .social-icons-footer ul li {
 }
 
 footer .social-icons-footer ul li a {
-    color: #fff !important;
+    /* color: #fff !important; */
+    color: #565680 !important;
     font-size: 18px;
     line-height: 27px;
 }
 
 footer .footer-logo-img {
-    color: #fff;
+    /* color: #fff; */
+    color: #565680;
 }
 
 .services-banner .banner-img {
@@ -515,6 +532,7 @@ footer .footer-logo-img {
 
 .about .company-features {
     margin-bottom: 30px;
+    align-items: center;
 }
 
 .about .company-features .wrap-icon {
@@ -578,8 +596,14 @@ footer .footer-logo-img {
     /* background: #f0f0f0; */
 }
 
+.agents .team-member .member-image {
+    height: 335px;
+}
+
 .agents .team-member .member-image img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .agents .team-member .member-details {
@@ -746,4 +770,33 @@ footer .footer-logo-img {
     letter-spacing: .1px;
     color: #fff;
     vertical-align: bottom;
+}
+
+.navbar-light .navbar-toggler {
+    margin: 27px 0;
+    float: right;
+    border: 0;
+    font-size: 22px;
+    padding-right: 30px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-contact content {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.about .heading p {
+    text-align: justify;
 }

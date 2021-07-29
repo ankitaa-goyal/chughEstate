@@ -1,0 +1,72 @@
+@media screen and (min-width:992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: inline-flex!important;
+        float: right;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    nav.navbar ul.navbar-nav {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0 !important;
+    }
+    .navbar-collapse {
+        background-color: #34366a;
+    }
+    nav.navbar .nav-link {
+        color: #e8b853 !important;
+    }
+    nav.navbar li.nav-item {
+        margin-left: 0;
+    }
+    .features-1 {
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    nav.navbar {
+        padding: 0;
+        position: unset;
+        background-color: #fff;
+    }
+    .footer-company-info {
+        margin-bottom: 15px;
+    }
+    footer .footer-section-heading {
+        margin-bottom: 10px;
+    }
+    footer .footer-contact-info {
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    footer .footer-contact {
+        margin-top: 6px;
+    }
+    footer .copyright {
+        text-align: center;
+    }
+    footer .social-icons-footer {
+        float: none;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .menu-bg-wrap {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width:575px) {
+    nav.navbar .navbar-brand {
+        padding-left: 0;
+        margin: 0;
+    }
+    .navbar-light .navbar-toggler {
+        padding-right: 0;
+        padding: 0;
+    }
+}

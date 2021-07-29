@@ -15,22 +15,22 @@
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/dark.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
+            <div class="container-md">
                 <div class="menu-bg-wrap bg-light">
                     <a class="navbar-brand" href="index.html">
                         <img src="images/logo.svg" alt="Company Logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" onclick="toggleHam()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse nav_align" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="mobile-nav">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="about.html">About</a>
                             </li>
@@ -61,7 +61,7 @@
     <section class="index-banner banner">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 px-0">
                     <div class="owl-carousel owl-theme main-banner">
                         <div class="item">
                             <img src="images/index-slider01.jpeg">
@@ -87,25 +87,25 @@
     <section class="features-1">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-3 col-md-3">
                     <div class="box-feature">
                         <img src="images/house2.svg" alt="New House Icon">
                         <h3>New Properties</h3>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-3 col-md-3">
                     <div class="box-feature">
                         <img src="images/real-estate-agent2.svg" alt="Real Estate Agent Icon">
                         <h3>Contact Agent</h3>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-3 col-md-3">
                     <div class="box-feature">
                         <img src="images/building2.svg" alt="Building Icon">
                         <h3>Building for Sale</h3>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-6 col-lg-3 col-md-3">
                     <div class="box-feature">
                         <img src="images/house-rent2.svg" alt="Rented House Icon">
                         <h3>House for Sale</h3>
@@ -127,12 +127,12 @@
                     <div class="site_wrapper">
                         <div class="site-image">
                             <a href="#" class="d-inline-block mb-4">
-                                <img src="images/property_1.jpeg" alt="property">
+                                <img src="images/6Marla.JPG" alt="property">
                             </a>
                             <div class="site-details">
-                                <h3>HD17 19 Utica Ave.</h3>
-                                <p>New York - USA</p>
-                                <strong>$20,000,000</strong>
+                                <h3>6 Marla</h3>
+                                <p>Sector 79, Mohali</p>
+                                <!-- <strong>$20,000,000</strong> -->
                             </div>
                         </div>
                     </div>
@@ -141,12 +141,12 @@
                     <div class="site_wrapper">
                         <div class="site-image">
                             <a href="#" class="d-inline-block mb-4">
-                                <img src="images/property_1.jpeg" alt="property">
+                                <img src="images/12Marla-duplex.JPG" alt="property">
                             </a>
                             <div class="site-details">
-                                <h3>HD17 19 Utica Ave.</h3>
-                                <p>New York - USA</p>
-                                <strong>$20,000,000</strong>
+                                <h3>12 Marla Duplex</h3>
+                                <p>Sector 89, Mohali</p>
+                                <!-- <strong>$20,000,000</strong> -->
                             </div>
                         </div>
                     </div>
@@ -155,12 +155,12 @@
                     <div class="site_wrapper">
                         <div class="site-image">
                             <a href="#" class="d-inline-block mb-4">
-                                <img src="images/property_1.jpeg" alt="property">
+                                <img src="images/12Marla-TripleStorey.JPG" alt="property">
                             </a>
                             <div class="site-details">
-                                <h3>HD17 19 Utica Ave.</h3>
-                                <p>New York - USA</p>
-                                <strong>$20,000,000</strong>
+                                <h3>12 Marla Independent Floors</h3>
+                                <p>Sector 89, Mohali</p>
+                                <!-- <strong>$20,000,000</strong> -->
                             </div>
                         </div>
                     </div>
@@ -169,12 +169,12 @@
                     <div class="site_wrapper">
                         <div class="site-image">
                             <a href="#" class="d-inline-block mb-4">
-                                <img src="images/property_1.jpeg" alt="property">
+                                <img src="images/1KanalCommercial.JPG" alt="property">
                             </a>
                             <div class="site-details">
-                                <h3>HD17 19 Utica Ave.</h3>
-                                <p>New York - USA</p>
-                                <strong>$20,000,000</strong>
+                                <h3>1 Kanal Commercial</h3>
+                                <p>Sector 82</p>
+                                <!-- <strong>$20,000,000</strong> -->
                             </div>
                         </div>
                     </div>
@@ -183,26 +183,12 @@
                     <div class="site_wrapper">
                         <div class="site-image">
                             <a href="#" class="d-inline-block mb-4">
-                                <img src="images/property_1.jpeg" alt="property">
+                                <img src="images/12MarlaHouse.JPG" alt="property">
                             </a>
                             <div class="site-details">
-                                <h3>HD17 19 Utica Ave.</h3>
-                                <p>New York - USA</p>
-                                <strong>$20,000,000</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="site_wrapper">
-                        <div class="site-image">
-                            <a href="#" class="d-inline-block mb-4">
-                                <img src="images/property_1.jpeg" alt="property">
-                            </a>
-                            <div class="site-details">
-                                <h3>HD17 19 Utica Ave.</h3>
-                                <p>New York - USA</p>
-                                <strong>$20,000,000</strong>
+                                <h3>12 Marla House</h3>
+                                <p>Sector 91</p>
+                                <!-- <strong>$20,000,000</strong> -->
                             </div>
                         </div>
                     </div>
@@ -216,22 +202,22 @@
             <div class="row clearfix bottommargin-lg counter-wrapper">
                 <div class="col-lg-3 col-md-6 dark text-center col-padding" style="background-color: #35366b;">
                     <i class="fas fa-map-signs"></i>
-                    <div class="counter counter-lined"><span data-from="1" data-to="6" data-refresh-interval="50" data-speed="2000"></span>+</div>
+                    <div class="counter counter-lined"><span data-from="1" data-to="15" data-refresh-interval="50" data-speed="2000"></span>+</div>
                     <h5>Years in Business</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 dark text-center col-padding" style="background-color: #576F9E;">
                     <i class="fas fa-home"></i>
-                    <div class="counter counter-lined"><span data-from="10" data-to="100" data-refresh-interval="100" data-speed="2500"></span>+</div>
+                    <div class="counter counter-lined"><span data-from="10" data-to="350" data-refresh-interval="100" data-speed="2500"></span>+</div>
                     <h5>Luxury Homes Sold</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 dark text-center col-padding" style="background-color: #6697B9;">
                     <i class="fas fa-building"></i>
-                    <div class="counter counter-lined"><span data-from="10" data-to="1000" data-refresh-interval="25" data-speed="3500"></span>+</div>
+                    <div class="counter counter-lined"><span data-from="10" data-to="500" data-refresh-interval="25" data-speed="3500"></span>+</div>
                     <h5>All Sold Properties</h5>
                 </div>
                 <div class="col-lg-3 col-md-6 dark text-center col-padding" style="background-color: #88C3D8;">
                     <i class="far fa-clock"></i>
-                    <div class="counter counter-lined"><span data-from="10" data-to="100" data-refresh-interval="30" data-speed="2700"></span>+</div>
+                    <div class="counter counter-lined"><span data-from="10" data-to="200" data-refresh-interval="30" data-speed="2700"></span>+</div>
                     <h5>Satisfied Clients</h5>
                 </div>
             </div>
@@ -245,13 +231,14 @@
                 <div class="testimonial-slider owl-carousel owl-theme">
                     <div class="testimonial-slider-wrapper item">
                         <div class="testimonial-image">
-                            <img src="images/testimonils.jpg" alt="">
+                            <img src="images/vineshTyagi.jpeg" alt="Client">
                         </div>
                         <div class="testimonial-content">
-                            <p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
+                            <p>We are so grateful to have been recommended the service of Chugh Estate. Always contactable and approachable. You have both really gone out of your way to help and your assistance, patience and time has been greatly appreciated.
+                                We will highly recommend your agency to people we know!</p>
                             <div class="testi-meta">
-                                Steve Jobs
-                                <span>Apple Inc.</span>
+                                Vinesh Tyagi
+                                <span>Government College Principal</span>
                             </div>
                         </div>
                     </div>
@@ -262,8 +249,8 @@
                         <div class="testimonial-content">
                             <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
                             <div class="testi-meta">
-                                John Doe
-                                <span>XYZ Inc.</span>
+                                Ankita Goyal
+                                <!-- <span>XYZ Inc.</span> -->
                             </div>
                         </div>
                     </div>
@@ -288,18 +275,19 @@
         <div class="container">
             <div class="upper-footer">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-8">
                         <div class="footer-company-info">
                             <div class="footer-logo-img">
                                 <!-- <h1>Chugh Estate</h1> -->
                                 <img src="images/logo.png">
                             </div>
                             <div class="footer-company-content">
-                                <p>Strikeout your entire digital marketing to-do list, breakthrough your growth plateau and see profound ROI with a single team of digital marketing specialists.</p>
+                                <p><i>"Quality is what we persue, we know what we do!"</i></p>
+                                <!-- <p>Strikeout your entire digital marketing to-do list, breakthrough your growth plateau and see profound ROI with a single team of digital marketing specialists.</p> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 offset-md-2">
+                    <div class="col-lg-4 offset-lg-2 col-md-3 offset-md-1">
                         <div class="quick-links">
                             <div class="footer-section-heading">
                                 <h5>Quick Links</h5>
@@ -336,22 +324,29 @@
                     <div class="col-md-4">
                         <div class="footer-contact">
                             <span><img src="images/info_icon1.png" alt="tel-icon"></span>
-                            <p><strong><a href="tel:9780426000">+91-9780426000</a></strong></p>
-                            <p>Mon-Sat 9 am to 7 pm</p>
+                            <div class="content">
+                                <p><strong><a href="tel:9780426000">+91-9780426000</a></strong></p>
+                                <p><strong><a href="tel:7889169629">+91-7889169629</a></strong></p>
+                                <p>Mon-Sat 10am to 6pm</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="footer-contact">
                             <span><img src="images/info_icon2.png" alt="email-icon"></span>
-                            <p><strong><a href="mailto:">chughestate85@gmail.com</a></strong></p>
-                            <p>Online support</p>
+                            <div class="content">
+                                <p><strong><a href="mailto:">chughestate85@gmail.com</a></strong></p>
+                                <p>Online support</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="footer-contact">
                             <span><img src="images/info_icon3.png" alt="address-icon"></span>
-                            <p>SCF-85, Second Floor</p>
-                            <p>Phase 7, Mohali, Punjab</p>
+                            <div class="content">
+                                <p>SCF-85, Second Floor</p>
+                                <p>Phase 7, Mohali, Punjab</p>
+                            </div>
                         </div>
                     </div>
                 </div>
